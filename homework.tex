@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper,margin=2cm]{geometry} 
+\usepackage{xeCJK,enumitem,titlesec,graphicx,listings,amsmath}
+\setCJKmainfont{Noto Sans CJK TC}
+
+\titleformat{\section}[block]{}{{\bfseries Problem} \thesection.}{1em}{}{}
+\titleformat{\subsection}[block]{}{\thesubsection}{10pt}{}{}
+\titleformat{\subsubsection}[block]{\hspace{1em}}{(\alph{subsubsection})}{10pt}{}{}
+
+\setlength{\leftmargin}{10cm}
+\lstset{
+    numbers=left,
+    breaklines=true,
+    tabsize=4,
+    basicstyle=\ttfamily,
+    showstringspaces=false
+}
+
+\title{\textbf{Homework}}
+\author{B05902094 蘇多門}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Example Problem}
+\subsection{subproblem test}
+\subsubsection{subsubproblem}
+\begin{lstlisting}[language=Python]
+for i in range(10):
+	print("example code %d"%i)
+\end{lstlisting}
+
+\end{document}
